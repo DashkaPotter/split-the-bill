@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bill.svg">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">
+            Let's Split Our Bill
+        </h1>
+
+        <form >
+
+        <input type="text" class="bill" placeholder="bill">
+
+        <input type="text" class="people" placeholder="How many people?">
+
+        <p > Did you like our service?</p>
+        
+        
+        <div class="tip">
+            <div class="btn-cont">
+                <button class="tip-btn">Add a Tip</button>
+            </div>
+            
+            <div class="select">
+                <select id="tip">
+                    <option disabled>Select an Option</option>
+                    <option value="0.30">WOW! 30%</option>
+                    <option value="0.20">Good service! 20%</option>
+                    <option value="0.10">It Was Okay! 10%</option>
+                    <option selected  value="0.00">No Tip!</option>
+                </select>
+            </div>
+            
+    </div>
+
+    <div class="calculate">
+        <button class="btn">CALCULATE</button>
+    </div>
+
+    <div id="showTotalAmountToPay">
+        <div class="billSplit">
+            <p class="parBillAndTip">Bill</p>
+            <span>$</span>
+            <span id="dividedBill"></span>
+            <span>per person</span>
+        </div>
+
+        <div class="totalTip">
+            <p class="parBillAndTip">Tip</p>
+            <span>$</span>
+            <span id="dividedTip"></span>
+            <span>per person</span>
+        </div>
+
+        <div class="totalAmount">
+            <p class="parBillAndTip">Total</p>
+            <span>$</span>
+            <span id="billAndTip"></span>
+            <span>per person</span>
+        </div>
+    </div>
+
+
+</div>
+
+        </form>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

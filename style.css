@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    /* background-color: #c8efff; */
+    background-color: #fad3f5;
+}
+input{
+    font-size: 16px;
+    /* background-color:#EBECF0; */
+    padding: 8px;
+    width: 95%;
+    outline: none;
+    border-radius: 8px;
+    color: #61677C;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow:  inset 2px 2px 5px #BABECC;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: none;
+    text-shadow: 1px 1px 0 white;
+    appearance: none;
+}
+.heading{
+    color:#4e4f50;
+    text-shadow: 0 -2px 1px #ffffff;
+    margin-top: 10px;
+    padding: 20px 0px;
+    font-size: 40px;
+}
+p{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 19px;
+    color: #474848;
+}
+.btn-cont{
+    display: flex;
+    padding: 0px 20px;
+}
+.tip{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+.select{
+    padding: 10px;
+    width: 50%;
+}
+.tip-btn{
+    background-color: #ffffff;
+    padding: 16px 30px;
+    border: none;
+    font-size: 19px;
+    border-radius: 10px;
+    color: #862626;
+    font-weight: 600;
+    /* background-color: #ffdffa; */
+    box-shadow: -2px -2px 4px #BABECC, 2px 2px 5px #BABECC;
+}
+.calculate{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+.btn{
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 60%;
+    color: #862626;
+    background-color: #ffffff;
+    padding: 13px 100px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 4px #BABECC, 2px 2px 5px #BABECC;
+}
+#showTotalAmountToPay {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.billSplit, .totalTip, .totalAmount {
+    margin: 10px;
+    padding: 28px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    color: #2d2d2d; 
+    text-shadow: 1px 1px 1px white;
+    margin-top: 30px;
+}
+
+
+.billSplit:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+.totalTip:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+.totalAmount:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+#tip{
+    display: none;
+}
+
+@media all and (max-width:500px){
+    input{
+        width: 90%;
+        padding: 8px;
+    }
+    .heading{
+        padding: 20px 0px;
+        font-size: 26px;
+    }
+    .btn{
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+        width: 60%;
+        padding: 12px 70px;
+    }
+    .tip-btn{
+        background-color: #ffffff;
+        padding: 13px 26px;
+        border: none;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    
+.billSplit, .totalTip, .totalAmount {
+    margin: 1px;
+    padding: 18px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+}
